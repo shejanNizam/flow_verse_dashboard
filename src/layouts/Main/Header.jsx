@@ -1,22 +1,21 @@
-import { FaBell } from "react-icons/fa";
-import { useNavigate } from "react-router";
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Header() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // const userName = "Admin";
-  const unreadNotifications = 3;
+  // const unreadNotifications = 3;
 
   const avatarUrl = "https://placehold.co/100x100/3B82F6/FFFFFF?text=P";
 
   return (
-    <header className="md:bg-primary w-full h-16 md:h-20 flex items-center justify-between px-4 md:px-8 md:shadow-sm rounded-lg z-50">
-      <h1 className="text-white text-lg md:text-2xl font-semibold">
+    <header className="md:bg-white w-full h-16 md:h-20 flex items-center justify-between px-4 md:px-8 rounded-lg z-50">
+      <h1 className="text-black text-lg md:text-2xl font-semibold">
         Welcome back!
       </h1>
 
-      <div className="flex items-center space-x-4 md:space-x-6">
-        <button
+      <div className="flex items-center space-x-2 md:space-x-4 border border-gray-200 shadow-sm p-2 rounded-xl">
+        {/* <button
           className="relative text-white p-2 rounded-full bg-white/20 hover:bg-white/40 transition-colors"
           onClick={() => navigate(`/notifications`)}
           aria-label="View notifications"
@@ -28,7 +27,7 @@ export default function Header() {
               {unreadNotifications}
             </span>
           )}
-        </button>
+        </button> */}
 
         <div className="relative h-10 w-10 md:h-12 md:w-12 rounded-full ring-2 ring-white overflow-hidden">
           <img
@@ -40,6 +39,13 @@ export default function Header() {
                 "https://placehold.co/100x100/3B82F6/FFFFFF?text=P";
             }}
           />
+        </div>
+        <div className="hidden md:block">
+          <h3 className="text-2xl font-bold">Mini Roy</h3>
+          <h4>Super Admin</h4>
+        </div>
+        <div className="border border-gray-200 p-2 rounded-full">
+          <IoIosArrowDown />
         </div>
       </div>
     </header>

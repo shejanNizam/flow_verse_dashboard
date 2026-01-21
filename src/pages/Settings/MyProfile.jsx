@@ -2,7 +2,7 @@ import { Button, Form } from "antd";
 import { useState } from "react";
 import { FiEdit } from "react-icons/fi";
 import { useNavigate } from "react-router";
-import defaultImage from "../../assets/main_logo/main_logo_lms.svg";
+import defaultImage from "../../assets/main_logo/main_logo.svg";
 import PasswordChangeModalForm from "../../components/PasswordChangeModalForm";
 import { useGetUserByTokenQuery } from "../../redux/features/user/userApi";
 import CustomLoading from "../../utils/CustomLoading";

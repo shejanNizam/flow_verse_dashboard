@@ -39,10 +39,10 @@ export default function Main() {
 
       <section className="flex-1 flex flex-col min-w-0 lg:ml-[20%]">
         {/* <section className="sticky top-0 w-full p-2 z-20 bg-white shadow-sm"> */}
-        <section className="sticky top-0 w-full p-2 z-20 bg-primary md:bg-white shadow-sm">
+        <section className="sticky top-0 w-full p-2 z-20 bg-white md:bg-white shadow-sm">
           <div className="flex items-center gap-4">
             <button
-              className="lg:hidden p-2 hover:bg-gray-100 hover:text-black text-white rounded-lg transition-colors"
+              className="lg:hidden p-2 hover:bg-gray-100 hover:text-black text-black rounded-lg transition-colors"
               onClick={toggleSidebar}
               aria-label="Toggle menu"
             >

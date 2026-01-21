@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink, useLocation, useNavigate } from "react-router";
 import Swal from "sweetalert2";
-import main_logo from "../../assets/main_logo/main_logo_lms.svg";
+import main_logo from "../../assets/main_logo/main_logo.svg";
 import { dashboardItems } from "../../constants/router.constants";
 import { logout } from "../../redux/slices/authSlice";
 import { routeLinkGenerators } from "../../utils/routeLinkGenerators";
@@ -27,8 +27,8 @@ const SubMenu = ({ children, rootPath, location, openName, name, onClose }) => {
           onClick={() => onClose && onClose()}
           className={({ isActive }) =>
             isActive
-              ? "bg-primary/70 text-white w-full px-2 py-1 flex items-center justify-start gap-3 transition-all rounded-lg"
-              : "text-black hover:text-white hover:bg-primary/70 w-full px-2 py-1 flex items-center justify-start gap-2 transition-all rounded-lg"
+              ? "bg-black text-white w-full px-2 py-1 flex items-center justify-start gap-3 transition-all rounded-lg"
+              : "text-black hover:text-white hover:bg-black w-full px-2 py-1 flex items-center justify-start gap-2 transition-all rounded-lg"
           }
         >
           <div className="flex-shrink-0">
@@ -65,7 +65,7 @@ export default function Sidebar({ onClose }) {
   };
 
   return (
-    <div className="w-full h-full flex flex-col border border-gray-200 rounded-xl shadow-md">
+    <div className="w-full h-full flex flex-col border border-gray-200 rounded-xl shadow-md bg-[#F5F7FA]">
       <div className="h-full flex flex-col justify-between bg-hash pt-4 px-4 lg:px-6">
         {/* Logo and Close Button */}
         <div className="pb-4 border-b border-gray-200">
@@ -109,8 +109,8 @@ export default function Sidebar({ onClose }) {
                     }
                     className={`outline-none w-full px-3 lg:px-4 py-2 lg:py-3 flex items-center justify-between gap-2 lg:gap-3 text-base lg:text-lg transition-all rounded-lg ${
                       isMenuActive
-                        ? "bg-primary/70 text-white shadow-sm"
-                        : "hover:text-white hover:bg-primary/70"
+                        ? "bg-black text-white shadow-sm"
+                        : "hover:text-white hover:bg-black"
                     }`}
                   >
                     <div className="flex items-center justify-start gap-2 lg:gap-3">
@@ -142,8 +142,8 @@ export default function Sidebar({ onClose }) {
                     onClick={() => onClose && onClose()}
                     className={({ isActive }) =>
                       isActive
-                        ? "bg-primary/70 text-white shadow-sm w-full px-3 lg:px-4 py-2 lg:py-3 flex items-center justify-start gap-2 lg:gap-3 text-base lg:text-lg transition-all rounded-lg"
-                        : "hover:text-white hover:bg-primary/70 w-full px-3 lg:px-4 py-2 lg:py-3 flex items-center justify-start gap-2 lg:gap-3 text-base lg:text-lg transition-all rounded-lg"
+                        ? "bg-black text-white shadow-sm w-full px-3 lg:px-4 py-2 lg:py-3 flex items-center justify-start gap-2 lg:gap-3 text-base lg:text-lg transition-all rounded-lg"
+                        : "hover:text-white hover:bg-black w-full px-3 lg:px-4 py-2 lg:py-3 flex items-center justify-start gap-2 lg:gap-3 text-base lg:text-lg transition-all rounded-lg"
                     }
                   >
                     <div className="flex-shrink-0">
@@ -153,7 +153,7 @@ export default function Sidebar({ onClose }) {
                   </NavLink>
                 </li>
               );
-            }
+            },
           )}
         </ul>
 

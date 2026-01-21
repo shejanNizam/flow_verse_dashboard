@@ -39,7 +39,7 @@ export const mainTheme = {
       colorTextHeading: "#000000",
       colorBgContainer: "#ffffff",
       headerBg: "#ffffff",
-      headerColor: "#305CDE",
+      headerColor: "#000000",
       headerBorderRadius: 0,
       borderRadius: 0,
       headerSplitColor: "none",
