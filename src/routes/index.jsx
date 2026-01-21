@@ -8,15 +8,14 @@ import ResetPassword from "../pages/Auth/ResetPassword";
 import SignIn from "../pages/Auth/SignIn";
 import VerifyEmail from "../pages/Auth/VerifyEmail";
 import { routesGenerators } from "../utils/routesGenerators";
-import AdminRoutes from "./AdminRoutes";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <AdminRoutes>
-        <Main />
-      </AdminRoutes>
+      // <AdminRoutes>
+      // </AdminRoutes>
+      <Main />
     ),
     children: routesGenerators(dashboardItems),
   },
@@ -41,7 +40,8 @@ const router = createBrowserRouter([
         element: <VerifyEmail />,
       },
       {
-        path: "/auth/reset-password/:email",
+        // path: "/auth/reset-password/:email",
+        path: "/auth/reset-password",
         element: <ResetPassword />,
       },
     ],

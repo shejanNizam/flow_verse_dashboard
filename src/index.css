@@ -6,7 +6,7 @@
 }
 
 @theme {
-  --color-primary: oklch(0.37 0.55 224);
+  --color-primary: oklch(0 0.55 224);
   --color-secondary: oklch(0.72 0.11 178);
   --color-danger: oklch(0.36 0.85 32);
 }

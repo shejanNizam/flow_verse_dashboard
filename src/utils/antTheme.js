@@ -5,9 +5,9 @@ export const mainTheme = {
   },
   components: {
     Button: {
-      colorPrimary: "#305CDE",
+      colorPrimary: "#000000",
       colorTextDisabled: "#000000",
-      colorPrimaryHover: "#486acf",
+      colorPrimaryHover: "#3D3B3B",
       colorPrimaryActive: "#305CDE",
       colorBgContainerDisabled: "white",
       borderRadius: 4,

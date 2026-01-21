@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import logo from "../../assets/main_logo/main_logo_lms.svg";
+import logo from "../../assets/main_logo/main_logo.svg";
 
 export default function Auth() {
   return (
