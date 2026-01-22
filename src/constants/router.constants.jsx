@@ -4,9 +4,9 @@ import { RiDashboardHorizontalLine } from "react-icons/ri";
 import { FaRegClock } from "react-icons/fa";
 import { LuUsers } from "react-icons/lu";
 import Notifications from "../components/Notifications";
+import Administrators from "../pages/Main/Administrators/Administrators";
 import ApiKey from "../pages/Main/ApiKey/ApiKey";
 import DashboardHome from "../pages/Main/DashboardHome/DashboardHome";
-import Parents from "../pages/Main/Parents/Parents";
 import Plans from "../pages/Main/Plans/Plans";
 import Users from "../pages/Main/Users/Users";
 import EditMyProfile from "../pages/Settings/EditMyProfile";
@@ -34,7 +34,8 @@ export const dashboardItems = [
     name: "Administrators",
     path: "administrators",
     icon: LuUsers,
-    element: <Parents />,
+    // element: <Parents />,
+    element: <Administrators />,
   },
   {
     name: "API key",
