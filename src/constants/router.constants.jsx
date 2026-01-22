@@ -8,7 +8,7 @@ import ApiKey from "../pages/Main/ApiKey/ApiKey";
 import DashboardHome from "../pages/Main/DashboardHome/DashboardHome";
 import Parents from "../pages/Main/Parents/Parents";
 import Plans from "../pages/Main/Plans/Plans";
-import Sessions from "../pages/Main/Sessions/Sessions";
+import Users from "../pages/Main/Users/Users";
 import EditMyProfile from "../pages/Settings/EditMyProfile";
 import MyProfile from "../pages/Settings/MyProfile";
 
@@ -27,7 +27,8 @@ export const dashboardItems = [
     name: "User Management",
     path: "users",
     icon: FaRegClock,
-    element: <Sessions />,
+    // element: <Sessions />,
+    element: <Users />,
   },
   {
     name: "Administrators",
