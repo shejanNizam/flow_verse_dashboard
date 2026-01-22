@@ -1,7 +1,7 @@
 import { Button, Form, Input, message, Spin } from "antd";
 import { useState } from "react";
 import { PiCameraPlus } from "react-icons/pi";
-import defaultImage from "../../assets/main_logo/main_logo_lms.svg";
+import defaultImage from "../../assets/main_logo/main_logo.svg";
 import { useNavigate } from "react-router";
 import {
   useGetUserByTokenQuery,
@@ -34,7 +34,7 @@ const EditMyProfile = () => {
       message.success(
         response?.data?.message ||
           response?.message ||
-          "Profile updated successfully"
+          "Profile updated successfully",
       );
 
       refetch();
@@ -109,8 +109,8 @@ const EditMyProfile = () => {
                     previewImage
                       ? previewImage
                       : profileData.profileImage
-                      ? profileData?.profileImage
-                      : defaultImage
+                        ? profileData?.profileImage
+                        : defaultImage
                   }
                   alt="Profile"
                   className="h-[144px] w-[144px] rounded-full object-cover"
